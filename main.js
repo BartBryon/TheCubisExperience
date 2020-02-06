@@ -14,9 +14,13 @@ $( document ).ready(function() {
 
     })
 
-    $('a').click(function (){
-        console.log("click scroll");
+    $('img[href^="#"]').on('click', function (){
         
-    });
+
+        $('html, body').animate({
+            'scrollTop': window.scrollTo(0, 0)
+         }, 1000, 'swing', window.scrollTo(0, 0));
+
+    })
 
 });
