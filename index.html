@@ -16,9 +16,11 @@
 
 <body>
     <div id="NavBarDiv" style="z-index: 20;">
+        <div> <img src="Images/Logo.png" href="#myVideo" id="NavLogo"></div>
         <div class="NavItem" id="AboutMe"> <a href="#contentDiv">ABOUT ME</a> </div>
-        <div class="NavItem" id="Posts">POSTS</div>
+        <div class="NavItem" id="Posts"> <a href="#BlogPostsContainerDiv">POSTS</a></div>
         <div class="NavItem" id="NewestPost">NEWEST POST</div class="NavItem" id="AboutMe">
+            <div > <img id="MobileNav" src="Images/Arrow-removebg-preview.png" href="#BlogPostsContainerDiv"></div>
     </div>
 
     <video autoplay muted loop id="myVideo">
@@ -38,11 +40,11 @@
     </div>
     <div id="contentDiv">
         <Div id="Biography">
-            <div id="BiographyTitle">
+            <div id="BiographyTitle" class="ContainerTitel">
                 <h1>A LITTLE BIT ABOUT ME</h1>
             </div>
             <div id="BiographyImage"> <img src="Images/me.jpg" id="PhotoMe"></div>
-            <div id="BiographyText">
+            <div class="smallText" id="BiographyText">
                 <p>Hey everyone, <br><br>
                     my name is <b>Bart</b> . I'm a last year <b>Information Management & Security</b> student at the
                     Thomas More College in Mechelen.
@@ -81,6 +83,12 @@
         <div class="HRDiv">
             <hr>
         </div>
+        <div id="BlogPostsContainerDiv">
+            <div id="BlogPostsContainerTitle" class="ContainerTitel">
+                <h1>MY EXPERIENCES AT CUBIS</h1>
+            </div>
+        </div>
+
     </div>
 </body>
 

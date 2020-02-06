@@ -1,3 +1,4 @@
+@media only screen  and (max-width: 680px) {
 body::-webkit-scrollbar {
     display: none;
   }
@@ -6,7 +7,9 @@ body{
     overflow: -moz-scrollbars-none;
 }
 
+
 #NavBarDiv{
+    display: none;
     position: fixed;
     width: 100%;
     height:50px;
@@ -19,8 +22,8 @@ body{
   
 }
 .NavItem{
-    display: inline-block;
-    box-sizing: border-box;
+    display: none;}
+   /* box-sizing: border-box;
     height: 100%;
     width: 200px;
     color:whitesmoke;
@@ -30,6 +33,8 @@ body{
     transition: 0.5s ease;
     
 }
+
+
 .NavItem > a{
     color:whitesmoke;
     text-decoration: none;
@@ -38,12 +43,37 @@ body{
     border-bottom: whitesmoke 3px solid;
     cursor: pointer;
 }
+*/
+#NavLogo{
+    display: none;}
+    /*position: absolute;
+    left: 50px;
+    top: 5px;
+   height: 40px;
+   
+    display: inline-block;
+    box-sizing: border-box;
+   transition: 1s;
+    color:whitesmoke;
+  }
 
+  #NavLogo:hover{
+    cursor: pointer;
+    filter: grayscale(1);
+  }
+
+*/
+#MobileNav{
+    display: block;
+    height:50px ;
+    text-align: center;
+}
 #myVideo {
     
     position: fixed;
     width: 100vw;
-   height: auto;
+   height: 100vh;
+   object-fit: cover;
     top: 0;
     left: 0;
     bottom: 0;
@@ -51,11 +81,14 @@ body{
     z-index: -15;
  
   }
+  
 
   #logo{
-      height: 200px;
+      height: 30vh;
       width: auto;
       z-index: -5;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
      
   }
   #TextDiv{
@@ -63,21 +96,22 @@ body{
     box-sizing: border-box;
       text-align: center;
       color: whitesmoke; 
+      left: 0;
       height: 100vh;
       width: 100vw;
-      margin-top: 10%;
+      margin-top: 10vh;
       z-index: -15;
       
     
   }
   #TitleDiv{
       font-family: 'Oswald', sans-serif;
-      font-size: 28pt;
+      font-size: 5vw;
       z-index: auto;
   }
   #NameDiv{
     font-family: 'Montserrat', sans-serif;
-    font-size: 24pt;
+    font-size: 4vw;
     z-index: auto;
 
 }
@@ -92,8 +126,9 @@ body{
 }
 
 #BiographyImage{
-    display: inline-block;
-    width:40%;
+    display: block;
+    width:100%;
+    text-align:center;
 }
 
 #PhotoMe{
@@ -101,19 +136,22 @@ body{
     height: auto;
     
 }
-#BiographyText{
-    width: 40%;
+.smallText{
+    width: 70%;
     display: inline-block;
     font-family: "Montserrat";
     text-align: justify;
-    font-size: 1.2vw;
+    font-size: 3vw;
+    box-sizing: border-box;
+    padding-top: auto;
+
 }
-#BiographyTitle{
+.ContainerTitel{
     font-family: "Oswald";
-    font-size: 18pt;
+    font-size: 5vw;
     margin-top: 50px;
     border-bottom: 3px solid;
-    width: 600px;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -123,4 +161,174 @@ body{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#Biography2Right{
+ padding: 20px;
+ text-align: center;
+}
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 680px) {
+    body::-webkit-scrollbar {
+        display: none;
+      }
+    body{
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+    }
+    
+    #NavBarDiv{
+        position: fixed;
+        width: 100%;
+        height:50px;
+        left:0;
+        top:0;
+        right:0;
+        background-color: rgb(22, 19, 13);
+        text-align: center;
+       
+      
+    }
+    #MobileNav{
+        display: none;
+    }
+    .NavItem{
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100%;
+        width: 200px;
+        color:whitesmoke;
+        padding-top: 15px;
+        font-family: "Oswald";
+        
+        transition: 0.5s ease;
+        
+    }
+    
+    
+    .NavItem > a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    .NavItem:hover{
+        border-bottom: whitesmoke 3px solid;
+        cursor: pointer;
+    }
+    
+    #NavLogo{
+        position: absolute;
+        left: 50px;
+        top: 5px;
+       height: 40px;
+       
+        display: inline-block;
+        box-sizing: border-box;
+       transition: 1s;
+        color:whitesmoke;
+      }
+    
+      #NavLogo:hover{
+        cursor: pointer;
+        filter: grayscale(1);
+      }
+    
+    
+    
+    #myVideo {
+        
+        position: fixed;
+        width: 100vw;
+       height: 100vh;
+       object-fit: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -15;
+     
+      }
+      
+    
+      #logo{
+          height: 200px;
+          width: auto;
+          z-index: -5;
+         
+      }
+      #TextDiv{
+          position: fixed;
+        box-sizing: border-box;
+          text-align: center;
+          color: whitesmoke; 
+          height: 100vh;
+          width: 100vw;
+          margin-top: 10%;
+          z-index: -15;
+          
+        
+      }
+      #TitleDiv{
+          font-family: 'Oswald', sans-serif;
+          font-size: 28pt;
+          z-index: auto;
+      }
+      #NameDiv{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24pt;
+        z-index: auto;
+    
+    }
+    #contentDiv{
+        margin-top: 100vh;
+        position: absolute;
+        background-color:whitesmoke;
+        left: 0;
+        right: 0;
+        z-index: -10;
+        text-align: center;
+    }
+    
+    #BiographyImage{
+        display: inline-block;
+        width:40%;
+    }
+    
+    #PhotoMe{
+        width: 70%;
+        height: auto;
+        
+    }
+    .smallText{
+        width: 40%;
+        display: inline-block;
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.2vw;
+        box-sizing: border-box;
+        padding-top: auto;
+    
+    }
+    .ContainerTitel{
+        font-family: "Oswald";
+        font-size: 18pt;
+        margin-top: 50px;
+        border-bottom: 3px solid;
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        
+    }
+    .HRDiv{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #Biography2Right{
+     padding: 20px;
+     text-align: center;
+    }
 }
