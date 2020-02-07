@@ -1,172 +1,215 @@
 @media only screen  and (max-width: 680px) {
-body::-webkit-scrollbar {
-    display: none;
-  }
-body{
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-}
-
-
-#NavBarDiv{
-    display: none;
-    position: fixed;
-    width: 100%;
-    height:50px;
-    left:0;
-    top:0;
-    right:0;
-    background-color: rgb(22, 19, 13);
-    text-align: center;
-   
-  
-}
-.NavItem{
-    display: none;}
-   /* box-sizing: border-box;
-    height: 100%;
-    width: 200px;
-    color:whitesmoke;
-    padding-top: 15px;
-    font-family: "Oswald";
+    body::-webkit-scrollbar {
+        display: none;
+      }
+    body{
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+    }
     
-    transition: 0.5s ease;
+    #NavBarDiv{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height:50px;
+        left:0;
+        top:0;
+        right:0;
+        background-color: rgb(22, 19, 13);
+        text-align: center;
+       
+      
+    }
+    #MobileNav{
+        display: none;
+    }
+    .NavItem{
+        display: inline-block;
+        box-sizing: border-box;
+        height: 100%;
+        width: 200px;
+        color:whitesmoke;
+        padding-top: 15px;
+        font-family: "Oswald";
+        
+        transition: 0.5s ease;
+        
+    }
     
-}
-
-
-.NavItem > a{
-    color:whitesmoke;
-    text-decoration: none;
-}
-.NavItem:hover{
-    border-bottom: whitesmoke 3px solid;
-    cursor: pointer;
-}
-*/
-#NavLogo{
-    display: none;}
-    /*position: absolute;
-    left: 50px;
-    top: 5px;
-   height: 40px;
-   
-    display: inline-block;
-    box-sizing: border-box;
-   transition: 1s;
-    color:whitesmoke;
-  }
-
-  #NavLogo:hover{
-    cursor: pointer;
-    filter: grayscale(1);
-  }
-
-*/
-#MobileNav{
-    display: block;
-    height:50px ;
-    text-align: center;
-}
-#myVideo {
     
-    position: fixed;
-    width: 100vw;
-   height: 100vh;
-   object-fit: cover;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -15;
- 
-  }
-  
-
-  #logo{
-      height: 30vh;
-      width: auto;
-      z-index: -5;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
+    .NavItem > a{
+        color:whitesmoke;
+        text-decoration: none;
+    }
+    .NavItem:hover{
+        border-bottom: whitesmoke 3px solid;
+        cursor: pointer;
+    }
+    
+    #NavLogo{
+        position: absolute;
+        left: 50px;
+        top: 5px;
+       height: 40px;
+       
+        display: inline-block;
+        box-sizing: border-box;
+       transition: 1s;
+        color:whitesmoke;
+      }
+    
+      #NavLogo:hover{
+        cursor: pointer;
+        filter: grayscale(1);
+      }
+    
+    
+    
+    #myVideo {
+        
+        position: fixed;
+        width: 100vw;
+       height: 100vh;
+       object-fit: cover;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -15;
      
-  }
-  #TextDiv{
-      position: fixed;
-    box-sizing: border-box;
-      text-align: center;
-      color: whitesmoke; 
-      left: 0;
-      height: 100vh;
-      width: 100vw;
-      margin-top: 10vh;
-      z-index: -15;
+      }
       
     
-  }
-  #TitleDiv{
-      font-family: 'Oswald', sans-serif;
-      font-size: 5vw;
-      z-index: auto;
-  }
-  #NameDiv{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 4vw;
-    z-index: auto;
-
-}
-#contentDiv{
-    margin-top: 100vh;
-    position: absolute;
-    background-color:whitesmoke;
-    left: 0;
-    right: 0;
-    z-index: -10;
-    text-align: center;
-}
-
-#BiographyImage{
-    display: block;
-    width:100%;
-    text-align:center;
-}
-
-#PhotoMe{
-    width: 70%;
-    height: auto;
+      #logo{
+          height: 25vh;
+          width: auto;
+          z-index: -5;
+         
+      }
+      #TextDiv{
+          position: fixed;
+        box-sizing: border-box;
+          text-align: center;
+          color: whitesmoke; 
+          left: 0;
+          height: 100vh;
+          width: 100vw;
+          margin-top: 10%;
+          z-index: -15;
+          
+        
+      }
+      #TitleDiv{
+          font-family: 'Oswald', sans-serif;
+          font-size: 4vh;
+          z-index: auto;
+      }
+      #NameDiv{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24pt;
+        z-index: auto;
     
-}
-.smallText{
-    width: 70%;
-    display: inline-block;
-    font-family: "Montserrat";
-    text-align: justify;
-    font-size: 3vw;
-    box-sizing: border-box;
-    padding-top: auto;
-
-}
-.ContainerTitel{
-    font-family: "Oswald";
-    font-size: 5vw;
-    margin-top: 50px;
-    border-bottom: 3px solid;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    }
+    #contentDiv{
+        margin-top: 100vh;
+        position: absolute;
+        background-color:whitesmoke;
+        left: 0;
+        right: 0;
+        z-index: -10;
+        text-align: center;
+    }
     
-}
-.HRDiv{
+    #BiographyImage{
+        display: inline-block;
+        width:100%;
+    }
+    
+    #PhotoMe{
+        width: 100%;
+        height: auto;
+        
+    }
+    .smallText{
+        width: 80%;
+        display: inline-block;
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.3vh;
+        box-sizing: border-box;
+        padding-top: auto;
+    
+    }
+    .ContainerTitel{
+        font-family: "Oswald";
+        font-size: 4vw;
+        margin-top: 50px;
+        border-bottom: 3px solid;
+        width:80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2vh;
+        
+    }
+    .HRDiv{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .PostTitle{
+        text-align: center;
+        font-family: "Oswald";
+        font-size: 3vw;
+        text-align: center;
+        width: 70vw;
+        border-bottom: 1px solid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .BlogPost{
+        text-align: center;
+        
+    }
+    .PostTitle > p{
+        font-family: "Montserrat";
+        font-size: 2.5vw;  
+    }
+    .BlogPostContent{
+    vertical-align: middle;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-}
-
-#Biography2Right{
- padding: 20px;
- text-align: center;
-}
+    border-bottom: 1px solid gray;
+    }
+    .BlogPostText{
+        width: 90%;
+       
+        display: inline-block ;
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.3vh;
+        box-sizing: border-box;
+        Padding-top: auto;
+        Padding-bottom: auto;  
+    
+    }
+    .PostImageContainer{
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        padding: 2%;
+       
+    }
+    .PostImage{
+        width: 100%;
+        height: auto;
+        filter: drop-shadow();
+        -webkit-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+        box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
@@ -330,5 +373,58 @@ body{
     #Biography2Right{
      padding: 20px;
      text-align: center;
+    }
+
+    .PostTitle{
+        text-align: center;
+        font-family: "Oswald";
+        font-size: 1.5vw;
+        text-align: center;
+        width: 30vw;
+        border-bottom: 1px solid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .BlogPost{
+        text-align: center;
+        
+    }
+    .PostTitle > p{
+        font-family: "Montserrat";
+        font-size: 1.2vw;  
+    }
+    .BlogPostContent{
+    vertical-align: middle;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid gray;
+    }
+    .BlogPostText{
+        width: 40%;
+        height: 100%;
+        display: inline-block ;
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.2vw;
+        box-sizing: border-box;
+        Padding-top: auto;
+        Padding-bottom: auto;  
+        vertical-align: middle;
+    }
+    .PostImageContainer{
+        box-sizing: border-box;
+        display: inline-block;
+        width: 40%;
+        padding: 2%;
+        vertical-align: middle;
+    }
+    .PostImage{
+        width: 100%;
+        height: auto;
+        filter: drop-shadow();
+        -webkit-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+        box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
     }
 }
