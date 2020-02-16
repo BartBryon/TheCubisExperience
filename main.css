@@ -183,7 +183,7 @@
     margin-right: auto;
     border-bottom: 1px solid gray;
     }
-    .BlogPostText{
+    .BlogPostText, .BlogPostText2{
         width: 90%;
        
         display: inline-block ;
@@ -195,14 +195,14 @@
         Padding-bottom: auto;  
     
     }
-    .PostImageContainer{
+    .PostImageContainer, .PostImageContainer2{
         box-sizing: border-box;
         display: inline-block;
         width: 100%;
         padding: 2%;
        
     }
-    .PostImage{
+    .PostImage, .PostImage2{
         width: 100%;
         height: auto;
         filter: drop-shadow();
@@ -399,6 +399,7 @@
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid gray;
+    text-align: center;
     }
     .BlogPostText{
         width: 40%;
@@ -412,6 +413,19 @@
         Padding-bottom: auto;  
         vertical-align: middle;
     }
+    .BlogPostText2{
+        width: 80%;
+        height: 100%;
+        display: block ;
+        font-family: "Montserrat";
+        text-align: justify;
+        font-size: 1.2vw;
+        box-sizing: border-box;
+        Padding-top: auto;
+        Padding-bottom: auto;  
+       margin-left: auto;
+       margin-right: auto;
+    }
     .PostImageContainer{
         box-sizing: border-box;
         display: inline-block;
@@ -419,7 +433,26 @@
         padding: 2%;
         vertical-align: middle;
     }
+    .PostImageContainer2{
+        text-align: center;
+        box-sizing: border-box;
+        width: 60%;
+        margin-left:auto;
+        margin-right: auto;
+        display: block;
+   
+        padding: 2%;
+       
+    }
     .PostImage{
+        width: 60%;
+        height: auto;
+        filter: drop-shadow();
+        -webkit-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+        box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
+    }
+    .PostImage2{
         width: 100%;
         height: auto;
         filter: drop-shadow();
