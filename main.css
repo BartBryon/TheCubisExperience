@@ -429,7 +429,8 @@
     .PostImageContainer{
         box-sizing: border-box;
         display: inline-block;
-        width: 40%;
+        width: 50%;
+        height: 100%;
         padding: 2%;
         vertical-align: middle;
     }
@@ -445,7 +446,7 @@
        
     }
     .PostImage{
-        width: 60%;
+        width: 90%;
         height: auto;
         filter: drop-shadow();
         -webkit-box-shadow: 14px 15px 29px -12px rgba(0,0,0,0.75);
