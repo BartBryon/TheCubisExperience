@@ -176,7 +176,7 @@
         font-family: "Montserrat";
         font-size: 2.5vw;  
     }
-    .BlogPostContent{
+    .BlogPostContent , .BlogPostContent2{
     vertical-align: middle;
     width: 90%;
     margin-left: auto;
@@ -393,7 +393,7 @@
         font-family: "Montserrat";
         font-size: 1.2vw;  
     }
-    .BlogPostContent{
+    .BlogPostContent, .BlogPostContent2{
     vertical-align: middle;
     width: 80%;
     margin-left: auto;
